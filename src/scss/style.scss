@@ -1,8 +1,16 @@
 $primary: #3258e8;
 $secondary: #ebeffd;
 $gray: #979a99;
-$drak: #232631;
+$dark: #232631;
 $white: #ffffff;
+
+// sizing
+$gap-section: 160px;
+
+body {
+  background-color: #f4f4f4;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -45,7 +53,7 @@ main {
     border-radius: 25px;
     h1 {
       line-height: 64px;
-      color: $drak;
+      color: $dark;
       font-size: 46px;
     }
     p {
@@ -73,11 +81,95 @@ main {
 }
 
 main {
-  .about-section {
-    margin-top: 180px;
+  .about {
+    margin-top: $gap-section;
+    h4 {
+      color: $primary;
+      font-weight: 600;
+      font-size: 22px;
+    }
+    h1 {
+      color: $dark;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 1.4em;
+    }
+    p {
+      color: $gray;
+      font-size: 18px;
+      font-weight: normal;
+    }
+    .statistic {
+      margin-top: 1rem;
+      h4 {
+        font-size: 26px;
+        color: $dark;
+        margin-bottom: 4px;
+      }
+      p {
+        color: $gray;
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+    .button-wrapper {
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      .btn-primary {
+        background-color: $primary;
+        border: none;
+        padding: 11px 20px;
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .btn-secondary {
+        background-color: $secondary;
+        border: none;
+        padding: 11px 20px;
+        color: $primary;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
     picture {
       .about-image {
         max-width: 460px;
+      }
+    }
+  }
+}
+
+main {
+  .class-catalog {
+    margin-top: $gap-section;
+    h4 {
+      color: $primary;
+      font-weight: 600;
+      font-size: 22px;
+      text-align: center;
+    }
+    h1 {
+      color: $dark;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 1.4em;
+      text-align: center;
+    }
+    .nav-pills {
+      margin-top: 3rem;
+      button {
+        color: $primary;
+        .active {
+          background-color: $dark !important;
+        }
+      }
+    }
+    .tab-content {
+      margin-top: 3rem;
+      .card {
+        background-color: $white;
+        border-radius: 25px;
       }
     }
   }
