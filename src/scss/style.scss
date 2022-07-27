@@ -1,15 +1,11 @@
 $primary: #3258e8;
-$secondary: #ebeffd;
+$secondary: #f6f9fc;
 $gray: #979a99;
 $dark: #232631;
 $white: #ffffff;
 
 // sizing
 $gap-section: 160px;
-
-body {
-  background-color: #f4f4f4;
-}
 
 * {
   padding: 0;
@@ -142,34 +138,48 @@ main {
 
 main {
   .class-catalog {
-    margin-top: $gap-section;
+    background-color: $secondary;
+    padding-top: 60px;
+    margin-top: 60px;
     h4 {
       color: $primary;
       font-weight: 600;
       font-size: 22px;
-      text-align: center;
     }
     h1 {
       color: $dark;
       font-size: 36px;
       font-weight: 600;
       line-height: 1.4em;
-      text-align: center;
     }
-    .nav-pills {
-      margin-top: 3rem;
-      button {
-        color: $primary;
-        .active {
-          background-color: $dark !important;
-        }
+    .header {
+      margin-bottom: 60px;
+      .btn-primary {
+        background-color: $primary;
+        border: none;
+        color: $white;
+        padding: 11px 20px;
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
       }
     }
-    .tab-content {
-      margin-top: 3rem;
-      .card {
-        background-color: $white;
-        border-radius: 25px;
+    .card {
+      background-color: $white;
+      border-radius: 12px;
+      border: none;
+      .card-img-top {
+        border-radius: 12px;
+      }
+      p {
+        color: $gray;
+      }
+      .bi-star-fill {
+        color: rgb(255, 174, 0);
+      }
+      .bi-people-fill,
+      .bi-book-half {
+        color: $gray;
       }
     }
   }
