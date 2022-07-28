@@ -3,6 +3,7 @@ $secondary: #f6f9fc;
 $gray: #979a99;
 $dark: #232631;
 $white: #ffffff;
+$yellow: rgb(255, 174, 0);
 
 // sizing
 $gap-section: 160px;
@@ -140,6 +141,7 @@ main {
   .class-catalog {
     background-color: $secondary;
     padding-top: 60px;
+    padding-bottom: 60px;
     margin-top: 60px;
     h4 {
       color: $primary;
@@ -175,12 +177,104 @@ main {
         color: $gray;
       }
       .bi-star-fill {
-        color: rgb(255, 174, 0);
+        color: $yellow;
       }
       .bi-people-fill,
       .bi-book-half {
         color: $gray;
       }
+    }
+  }
+}
+
+main {
+  .review {
+    margin-top: $gap-section;
+    h4 {
+      color: $primary;
+      font-weight: 600;
+      font-size: 22px;
+    }
+    .bi-star-fill {
+      color: $yellow;
+    }
+    h1 {
+      color: $dark;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.4em;
+    }
+    p {
+      font-size: 18px;
+      color: $gray;
+    }
+    .btn-primary {
+      background-color: $primary;
+      border: none;
+      color: $white;
+      padding: 11px 20px;
+      color: $white;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
+
+main {
+  .cta {
+    padding-top: 60px;
+    padding-bottom: $gap-section;
+    margin-top: 60px;
+    background-color: $secondary;
+    h4 {
+      color: $primary;
+      font-weight: 600;
+      font-size: 22px;
+    }
+    h1 {
+      color: $dark;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.4em;
+      max-width: 520px;
+      text-align: center;
+    }
+    .btn-primary {
+      background-color: $primary;
+      border: none;
+      color: $white;
+      padding: 11px 20px;
+      color: $white;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
+
+footer {
+  box-shadow: -1px -1px 1px rgba(219, 222, 230, 0.38);
+  background-color: $secondary;
+  p {
+    color: $gray;
+    max-width: 300px;
+  }
+  h6 {
+    color: $dark;
+  }
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    color: $gray;
+  }
+  a:hover {
+    color: $dark;
+  }
+  .bottom {
+    box-shadow: -1px -1px 1px rgba(219, 222, 230, 0.38);
+    p {
+      font-size: 16px;
+      color: $gray;
+      max-width: none;
     }
   }
 }
