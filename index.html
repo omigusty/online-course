@@ -8,7 +8,9 @@
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link href="node_modules/aos/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.min.css">
+
 </head>
 
 <body>
@@ -79,7 +81,7 @@
     <main>
         <section class="about">
             <div class="container">
-                <div>
+                <div data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="row-12 d-flex">
                         <div class="col-6">
                             <picture>
@@ -125,7 +127,8 @@
     <main>
         <section class="class-catalog">
             <div class="container">
-                <div class="header d-flex justify-content-between align-items-center">
+                <div class="header d-flex justify-content-between align-items-center" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center">
                     <div>
                         <h4>Kelas Populer</h4>
                         <h1>Special Trip Packages</h1>
@@ -136,7 +139,7 @@
                 </div>
                 <div class="row">
                     <div class="col-4">
-                        <div class="card p-4">
+                        <div class="card p-4" data-aos="fade-up" data-aos-anchor-placement="top-center">
                             <img src="src/img/1.png" class="card-img-top" alt="...">
                             <div class="card-body p-0">
                                 <h5 class="card-title mt-3">Belajar Web Design Untuk Pemula</h5>
@@ -174,7 +177,7 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card p-4">
+                        <div class="card p-4" data-aos="fade-up" data-aos-anchor-placement="top-center">
                             <img src="src/img/1.png" class="card-img-top" alt="...">
                             <div class="card-body p-0">
                                 <h5 class="card-title mt-3">Belajar Web Design Untuk Pemula</h5>
@@ -212,7 +215,7 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card p-4">
+                        <div class="card p-4" data-aos="fade-up" data-aos-anchor-placement="top-center">
                             <img src="src/img/1.png" class="card-img-top" alt="...">
                             <div class="card-body p-0">
                                 <h5 class="card-title mt-3">Belajar Web Design Untuk Pemula</h5>
@@ -260,7 +263,7 @@
     <main>
         <section class="review">
             <div class="container">
-                <div class="row d-flex align-items-center">
+                <div class="row d-flex align-items-center" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="col-4">
                         <picture>
                             <img src="src/img/review.jpg" width="320px" alt="Reviewer">
@@ -312,7 +315,8 @@
     <main>
         <section class="cta">
             <div class="container">
-                <div class="d-flex flex-column align-items-center">
+                <div class="d-flex flex-column align-items-center" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center">
                     <picture>
                         <img src="src/img/illustration.svg" alt="Illustration">
                     </picture>
@@ -390,7 +394,12 @@
     </footer>
     <!-- End Footer -->
 
+    <!-- JavaScript -->
+    <script src="node_modules/aos/dist/aos.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
