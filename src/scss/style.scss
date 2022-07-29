@@ -1,9 +1,10 @@
-$primary: #3258e8;
+$primary: #00b3ff;
 $secondary: #f6f9fc;
 $gray: #979a99;
 $dark: #232631;
 $white: #ffffff;
 $yellow: rgb(255, 174, 0);
+$border: -1px -1px 1px rgba(219, 222, 230, 0.38);
 
 // sizing
 $gap-section: 160px;
@@ -17,7 +18,7 @@ $gap-section: 160px;
 nav {
   .navbar-brand {
     img {
-      max-width: 114px;
+      max-width: 160px;
     }
   }
   .navbar-nav {
@@ -111,7 +112,6 @@ main {
     }
     .button-wrapper {
       margin-top: 1rem;
-      margin-bottom: 3rem;
       .btn-primary {
         background-color: $primary;
         border: none;
@@ -170,8 +170,15 @@ main {
       background-color: $white;
       border-radius: 12px;
       border: none;
+      .btn-primary {
+        background-color: $primary;
+        border: none;
+        padding: 8px;
+      }
       .card-img-top {
         border-radius: 12px;
+        height: 231px;
+        object-fit: cover;
       }
       p {
         color: $gray;
@@ -252,7 +259,7 @@ main {
 }
 
 footer {
-  box-shadow: -1px -1px 1px rgba(219, 222, 230, 0.38);
+  box-shadow: $border;
   background-color: $secondary;
   p {
     color: $gray;
@@ -270,7 +277,7 @@ footer {
     color: $dark;
   }
   .bottom {
-    box-shadow: -1px -1px 1px rgba(219, 222, 230, 0.38);
+    box-shadow: $border;
     p {
       font-size: 16px;
       color: $gray;
