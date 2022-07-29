@@ -81,6 +81,10 @@ main {
 main {
   .about {
     margin-top: $gap-section;
+    .row-12 {
+      display: flex;
+      align-items: center;
+    }
     h4 {
       color: $primary;
       font-weight: 600;
@@ -112,6 +116,7 @@ main {
     }
     .button-wrapper {
       margin-top: 1rem;
+      display: flex;
       .btn-primary {
         background-color: $primary;
         border: none;
@@ -155,6 +160,9 @@ main {
       line-height: 1.4em;
     }
     .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin-bottom: 60px;
       .btn-primary {
         background-color: $primary;
@@ -205,14 +213,16 @@ main {
     .bi-star-fill {
       color: $yellow;
     }
-    h1 {
+    h3 {
       color: $dark;
-      font-size: 28px;
-      font-weight: 500;
-      line-height: 1.4em;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.3em;
+      font-style: italic;
     }
     p {
       font-size: 18px;
+      margin-top: 1rem;
       color: $gray;
     }
     .btn-primary {
@@ -287,3 +297,147 @@ footer {
 }
 
 // Responsive
+@media (min-width: 320px) and (max-width: 576px) {
+  main {
+    .hero-section {
+      margin-top: 20px;
+      padding: 20px;
+      height: 380px;
+      h1 {
+        font-size: 28px;
+        line-height: 1.5em;
+      }
+      p {
+        line-height: 1.5em;
+        font-size: 18px;
+      }
+      .btn-primary {
+        margin-top: 15px;
+        font-size: 14px;
+      }
+      .hero-image {
+        visibility: hidden;
+      }
+    }
+  }
+
+  main {
+    .about {
+      margin-top: 80px;
+      .row-12 {
+        display: block;
+        picture {
+          .about-image {
+            width: 280px;
+          }
+        }
+        h4 {
+          margin-top: 2rem;
+          font-size: 20px;
+        }
+        h1 {
+          font-size: 28px;
+        }
+        p {
+          margin-top: 20px;
+          font-size: 16px;
+        }
+        .statistic {
+          h4 {
+            margin-bottom: 2px;
+          }
+          p {
+            margin-top: 0px;
+          }
+        }
+        .button-wrapper {
+          .btn-primary,
+          .btn-secondary {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    .class-catalog {
+      .header {
+        display: block;
+        h4 {
+          margin-top: 2rem;
+          font-size: 20px;
+        }
+        h1 {
+          font-size: 28px;
+        }
+        .btn-primary {
+          font-size: 14px;
+          margin-top: 1rem;
+        }
+      }
+      .card {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  main {
+    .review {
+      margin-top: 80px;
+      picture {
+        img {
+          width: 260px;
+        }
+      }
+      h4 {
+        margin-top: 2rem;
+        font-size: 20px;
+      }
+      .mt-5 {
+        margin-top: 2rem !important;
+      }
+      h3 {
+        font-size: 18px;
+        margin-top: 1rem;
+      }
+      .btn-primary {
+        font-size: 14px;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  main {
+    .cta {
+      padding-top: 40px;
+      padding-bottom: 80px;
+      picture {
+        img {
+          max-width: 420px;
+        }
+      }
+      h4 {
+        font-size: 20px;
+      }
+      h1 {
+        font-size: 28px;
+        line-height: 2rem;
+      }
+      .btn-primary {
+        font-size: 14px;
+      }
+    }
+  }
+
+  footer {
+    .responsive-link {
+      align-items: flex-start !important;
+    }
+    .bottom {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
